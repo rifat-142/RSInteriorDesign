@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RS Interior Design</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f2f2f2;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #1c1c1c;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+      font-weight: 500;
+    }
+    .hero {
+      background: url('https://i.ibb.co/BzftT7k/interior-banner.jpg') no-repeat center center/cover;
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+    }
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+    .btn {
+      padding: 12px 24px;
+      background-color: #e91e63;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: 500;
+    }
+    section {
+      padding: 60px 40px;
+    }
+    .section-title {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 40px;
+      color: #e91e63;
+    }
+    .services, .gallery, .reviews {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .card h3 {
+      margin-top: 15px;
+      color: #333;
+    }
+    .contact {
+      background: #1c1c1c;
+      color: white;
+      padding: 60px 40px;
+      text-align: center;
+    }
+    .contact input, .contact textarea {
+      width: 80%;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+    }
+    .contact button {
+      background: #e91e63;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #111;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">RS INTERIOR</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h1 data-aos="fade-up">Transform Your Home with Elegance</h1>
+    <p data-aos="fade-up" data-aos-delay="200">Modern and Classy Interior Solutions</p>
+    <a href="#contact" class="btn" data-aos="fade-up" data-aos-delay="400">Get in Touch</a>
+  </section>
+
+  <section id="services">
+    <h2 class="section-title" data-aos="fade-right">Our Services</h2>
+    <div class="services">
+      <div class="card" data-aos="fade-up"><img src="https://i.ibb.co/ZfG74P0/tv-unit.jpg" alt="TV Unit"><h3>TV Unit Design</h3></div>
+      <div class="card" data-aos="fade-up" data-aos-delay="100"><img src="https://i.ibb.co/dKQRCBt/ceiling.jpg" alt="Ceiling Design"><h3>False Ceiling</h3></div>
+      <div class="card" data-aos="fade-up" data-aos-delay="200"><img src="https://i.ibb.co/Yjjs9sv/bedroom.jpg" alt="Bedroom"><h3>Bedroom Makeover</h3></div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2 class="section-title" data-aos="fade-left">Gallery</h2>
+    <div class="gallery">
+      <div class="card" data-aos="zoom-in"><img src="https://i.ibb.co/sPVZzHF/gallery1.jpg" alt="Design 1"></div>
+      <div class="card" data-aos="zoom-in" data-aos-delay="100"><img src="https://i.ibb.co/g6dxXRc/gallery2.jpg" alt="Design 2"></div>
+      <div class="card" data-aos="zoom-in" data-aos-delay="200"><img src="https://i.ibb.co/P1QmvHZ/gallery3.jpg" alt="Design 3"></div>
+    </div>
+  </section>
+
+  <section id="reviews">
+    <h2 class="section-title" data-aos="fade-up">Client Reviews</h2>
+    <div class="reviews">
+      <div class="card" data-aos="fade-right">
+        <p>"They turned my small space into a luxurious dream. Highly recommended!"</p>
+        <h4>- Mitu Akter</h4>
+      </div>
+      <div class="card" data-aos="fade-right" data-aos-delay="100">
+        <p>"Best service in town. Fast, beautiful, and affordable!"</p>
+        <h4>- Arif Hasan</h4>
+      </div>
+      <div class="card" data-aos="fade-right" data-aos-delay="200">
+        <p>"I loved their modern TV unit design. Changed my whole living room vibe."</p>
+        <h4>- Salma Sultana</h4>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <form action="https://formspree.io/f/xqkrkzlj" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required><br>
+      <input type="email" name="email" placeholder="Your Email" required><br>
+      <textarea name="message" rows="4" placeholder="Your Message" required></textarea><br>
+      <button type="submit">Send Message</button>
+    </form>
+    <p>Or call us directly: <strong>+8801XXXXXXXXX</strong></p>
+  </section>
+
+  <footer>
+    <p>© 2025 RSInteriorDesign.com | Designed with 💖 by Arbir Abbu & Priya</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
